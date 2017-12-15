@@ -1,0 +1,45 @@
+prefix=vnc_
+note: vl objectives count positive check results e.g. for adjust the sensitivity of the check.
+AI = auto increment
+FP = Objective, that helps to avoid false positives.
+
+
+ticksontick - dummy
+ AutoIncrement the ticks value on every tick (gets reseted after 20 ticks)
+
+onground - dummy
+ 0 = player is off ground
+ 1 = player is on ground
+ 
+ticksoffgrnd - dummy
+ how many ticks a player is off ground (gets reseted after arriving 20 or a certain time)
+ 
+ticksongrnd - dummy
+ how many ticks a player is on ground (gets reseted after arriving 8)
+ 
+airvl - dummy
+
+[noprefix]displayFlags - trigger
+ logger
+ 
+dispFlagsSys - dummy
+ logger
+ 
+AIjumpFP - stat.jump
+ Air
+ 
+sprntValueFP - stat.sprintOneCm
+ Air
+ 
+walkValueFP - stat.walkOneCm
+ Air
+ 
+AIhitDealFP - stat.damageDealt
+ Air
+ 
+AIhitTakeFP - stat.damageTaken
+ Air
+ 
+
+ 
+ 
