@@ -2,10 +2,27 @@ prefix=vnc_
 note: vl objectives count positive check results e.g. for adjust the sensitivity of the check.
 AI = auto increment
 FP = Objective, that helps to avoid false positives.
-
+L = Listener
+E = Event
 
 ticksontick - dummy
  AutoIncrement the ticks value on every tick (gets reseted after 20 ticks)
+ 
+ tickontick - dummy
+ AutoIncrement the ticks value on every tick (gets reseted after 20 ticks)
+ 
+ tickonticks - dummy
+ AutoIncrement the ticks value on every tick (gets reseted after 20 ticks)
+
+spawn - dummy
+
+LonJoin stat.playOneMinute
+
+LonLeave stat.leaveGame
+
+EonJoin - dummy
+
+EonLeave - dummy
 
 onground - dummy
  0 = player is off ground
