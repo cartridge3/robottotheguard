@@ -5,7 +5,7 @@ FP = Objective, that helps to avoid false positives.
 L = Listener
 E = Event
 H = history score (data storage)
-
+b = block
 reputation - dummy
 
 ticksontick - dummy
@@ -39,6 +39,8 @@ ticksongrnd - dummy
  
 mAirvl - dummy
 
+BPFPlacevl - dummy
+
 [noprefix]displayFlags - trigger
  logger
  
@@ -60,6 +62,746 @@ AIhitDealFP - stat.damageDealt
 AIhitTakeFP - stat.damageTaken
  mAir
  
+BPb0 - stat.useItem.minecraft.stone
+ BPFPlace
+
+BPb1 - stat.useItem.minecraft.grass
+ BPFPlace
+
+BPb2 - stat.useItem.minecraft.dirt
+ BPFPlace
+
+BPb3 - stat.useItem.minecraft.cobblestone
+ BPFPlace
+
+BPb4 - stat.useItem.minecraft.planks
+ BPFPlace
+
+BPb5 - stat.useItem.minecraft.sapling
+ BPFPlace
+
+BPb6 - stat.useItem.minecraft.bedrock
+ BPFPlace
+
+BPb7 - stat.useItem.minecraft.flowing_water
+ BPFPlace
+
+BPb8 - stat.useItem.minecraft.water
+ BPFPlace
+
+BPb9 - stat.useItem.minecraft.flowing_lava
+ BPFPlace
+
+BPb10 - stat.useItem.minecraft.lava
+ BPFPlace
+
+BPb11 - stat.useItem.minecraft.sand
+ BPFPlace
+
+BPb12 - stat.useItem.minecraft.gravel
+ BPFPlace
+
+BPb13 - stat.useItem.minecraft.gold_ore
+ BPFPlace
+
+BPb14 - stat.useItem.minecraft.iron_ore
+ BPFPlace
+
+BPb15 - stat.useItem.minecraft.coal_ore
+ BPFPlace
+
+BPb16 - stat.useItem.minecraft.log
+ BPFPlace
+
+BPb17 - stat.useItem.minecraft.leaves
+ BPFPlace
+
+BPb18 - stat.useItem.minecraft.sponge
+ BPFPlace
+
+BPb19 - stat.useItem.minecraft.glass
+ BPFPlace
+
+BPb20 - stat.useItem.minecraft.lapis_ore
+ BPFPlace
+
+BPb21 - stat.useItem.minecraft.lapis_block
+ BPFPlace
+
+BPb22 - stat.useItem.minecraft.dispenser
+ BPFPlace
+
+BPb23 - stat.useItem.minecraft.sandstone
+ BPFPlace
+
+BPb24 - stat.useItem.minecraft.noteblock
+ BPFPlace
+
+BPb25 - stat.useItem.minecraft.bed
+ BPFPlace
+
+BPb26 - stat.useItem.minecraft.golden_rail
+ BPFPlace
+
+BPb27 - stat.useItem.minecraft.detector_rail
+ BPFPlace
+
+BPb28 - stat.useItem.minecraft.sticky_piston
+ BPFPlace
+
+BPb29 - stat.useItem.minecraft.web
+ BPFPlace
+
+BPb30 - stat.useItem.minecraft.tallgrass
+ BPFPlace
+
+BPb31 - stat.useItem.minecraft.deadbush
+ BPFPlace
+
+BPb32 - stat.useItem.minecraft.piston
+ BPFPlace
+
+BPb33 - stat.useItem.minecraft.piston_head
+ BPFPlace
+
+BPb34 - stat.useItem.minecraft.wool
+ BPFPlace
+
+BPb35 - stat.useItem.minecraft.yellow_flower
+ BPFPlace
+
+BPb36 - stat.useItem.minecraft.red_flower
+ BPFPlace
+
+BPb37 - stat.useItem.minecraft.brown_mushroom
+ BPFPlace
+
+BPb38 - stat.useItem.minecraft.red_mushroom
+ BPFPlace
+
+BPb39 - stat.useItem.minecraft.gold_block
+ BPFPlace
+
+BPb40 - stat.useItem.minecraft.iron_block
+ BPFPlace
+
+BPb41 - stat.useItem.minecraft.double_stone_slab
+ BPFPlace
+
+BPb42 - stat.useItem.minecraft.stone_slab
+ BPFPlace
+
+BPb43 - stat.useItem.minecraft.brick_block
+ BPFPlace
+
+BPb44 - stat.useItem.minecraft.tnt
+ BPFPlace
+
+BPb45 - stat.useItem.minecraft.bookshelf
+ BPFPlace
+
+BPb46 - stat.useItem.minecraft.mossy_cobblestone
+ BPFPlace
+
+BPb47 - stat.useItem.minecraft.obsidian
+ BPFPlace
+
+BPb48 - stat.useItem.minecraft.torch
+ BPFPlace
+
+BPb49 - stat.useItem.minecraft.fire
+ BPFPlace
+
+BPb50 - stat.useItem.minecraft.mob_spawner
+ BPFPlace
+
+BPb51 - stat.useItem.minecraft.oak_stairs
+ BPFPlace
+
+BPb52 - stat.useItem.minecraft.chest
+ BPFPlace
+
+BPb53 - stat.useItem.minecraft.redstone_wire
+ BPFPlace
+
+BPb54 - stat.useItem.minecraft.diamond_ore
+ BPFPlace
+
+BPb55 - stat.useItem.minecraft.diamond_block
+ BPFPlace
+
+BPb56 - stat.useItem.minecraft.crafting_table
+ BPFPlace
+
+BPb57 - stat.useItem.minecraft.wheat
+ BPFPlace
+
+BPb58 - stat.useItem.minecraft.farmland
+ BPFPlace
+
+BPb59 - stat.useItem.minecraft.furnace
+ BPFPlace
+
+BPb60 - stat.useItem.minecraft.lit_furnace
+ BPFPlace
+
+BPb61 - stat.useItem.minecraft.standing_sign
+ BPFPlace
+
+BPb62 - stat.useItem.minecraft.wooden_door
+ BPFPlace
+
+BPb63 - stat.useItem.minecraft.ladder
+ BPFPlace
+
+BPb64 - stat.useItem.minecraft.rail
+ BPFPlace
+
+BPb65 - stat.useItem.minecraft.stone_stairs
+ BPFPlace
+
+BPb66 - stat.useItem.minecraft.wall_sign
+ BPFPlace
+
+BPb67 - stat.useItem.minecraft.lever
+ BPFPlace
+
+BPb68 - stat.useItem.minecraft.stone_pressure_plate
+ BPFPlace
+
+BPb69 - stat.useItem.minecraft.iron_door
+ BPFPlace
+
+BPb70 - stat.useItem.minecraft.wooden_pressure_plate
+ BPFPlace
+
+BPb71 - stat.useItem.minecraft.redstone_ore
+ BPFPlace
+
+BPb72 - stat.useItem.minecraft.lit_redstone_ore
+ BPFPlace
+
+BPb73 - stat.useItem.minecraft.unlit_redstone_torch
+ BPFPlace
+
+BPb74 - stat.useItem.minecraft.redstone_torch
+ BPFPlace
+
+BPb75 - stat.useItem.minecraft.stone_button
+ BPFPlace
+
+BPb76 - stat.useItem.minecraft.snow_layer
+ BPFPlace
+
+BPb77 - stat.useItem.minecraft.ice
+ BPFPlace
+
+BPb78 - stat.useItem.minecraft.snow
+ BPFPlace
+
+BPb79 - stat.useItem.minecraft.cactus
+ BPFPlace
+
+BPb80 - stat.useItem.minecraft.clay
+ BPFPlace
+
+BPb81 - stat.useItem.minecraft.reeds
+ BPFPlace
+
+BPb82 - stat.useItem.minecraft.jukebox
+ BPFPlace
+
+BPb83 - stat.useItem.minecraft.fence
+ BPFPlace
+
+BPb84 - stat.useItem.minecraft.pumpkin
+ BPFPlace
+
+BPb85 - stat.useItem.minecraft.netherrack
+ BPFPlace
+
+BPb86 - stat.useItem.minecraft.soul_sand
+ BPFPlace
+
+BPb87 - stat.useItem.minecraft.glowstone
+ BPFPlace
+
+BPb88 - stat.useItem.minecraft.portal
+ BPFPlace
+
+BPb89 - stat.useItem.minecraft.lit_pumpkin
+ BPFPlace
+
+BPb90 - stat.useItem.minecraft.cake
+ BPFPlace
+
+BPb91 - stat.useItem.minecraft.unpowered_repeater
+ BPFPlace
+
+BPb92 - stat.useItem.minecraft.powered_repeater
+ BPFPlace
+
+BPb93 - stat.useItem.minecraft.stained_glass
+ BPFPlace
+
+BPb94 - stat.useItem.minecraft.trapdoor
+ BPFPlace
+
+BPb95 - stat.useItem.minecraft.monster_egg
+ BPFPlace
+
+BPb96 - stat.useItem.minecraft.stonebrick
+ BPFPlace
+
+BPb97 - stat.useItem.minecraft.iron_bars
+ BPFPlace
+
+BPb98 - stat.useItem.minecraft.glass_pane
+ BPFPlace
+
+BPb99 - stat.useItem.minecraft.melon_block
+ BPFPlace
+
+BPb100 - stat.useItem.minecraft.pumpkin_stem
+ BPFPlace
+
+BPb101 - stat.useItem.minecraft.melon_stem
+ BPFPlace
+
+BPb102 - stat.useItem.minecraft.vine
+ BPFPlace
+
+BPb103 - stat.useItem.minecraft.fence_gate
+ BPFPlace
+
+BPb104 - stat.useItem.minecraft.brick_stairs
+ BPFPlace
+
+BPb105 - stat.useItem.minecraft.stone_brick_stairs
+ BPFPlace
+
+BPb106 - stat.useItem.minecraft.mycelium
+ BPFPlace
+
+BPb107 - stat.useItem.minecraft.waterlily
+ BPFPlace
+
+BPb108 - stat.useItem.minecraft.nether_brick
+ BPFPlace
+
+BPb109 - stat.useItem.minecraft.nether_brick_fence
+ BPFPlace
+
+BPb110 - stat.useItem.minecraft.nether_brick_stairs
+ BPFPlace
+
+BPb111 - stat.useItem.minecraft.nether_wart
+ BPFPlace
+
+BPb112 - stat.useItem.minecraft.enchanting_table
+ BPFPlace
+
+BPb113 - stat.useItem.minecraft.brewing_stand
+ BPFPlace
+
+BPb114 - stat.useItem.minecraft.cauldron
+ BPFPlace
+
+BPb115 - stat.useItem.minecraft.end_portal
+ BPFPlace
+
+BPb116 - stat.useItem.minecraft.end_portal_frame
+ BPFPlace
+
+BPb117 - stat.useItem.minecraft.end_stone
+ BPFPlace
+
+BPb118 - stat.useItem.minecraft.dragon_egg
+ BPFPlace
+
+BPb119 - stat.useItem.minecraft.redstone_lamp
+ BPFPlace
+
+BPb120 - stat.useItem.minecraft.lit_redstone_lamp
+ BPFPlace
+
+BPb121 - stat.useItem.minecraft.double_wooden_slab
+ BPFPlace
+
+BPb122 - stat.useItem.minecraft.wooden_slab
+ BPFPlace
+
+BPb123 - stat.useItem.minecraft.cocoa
+ BPFPlace
+
+BPb124 - stat.useItem.minecraft.sandstone_stairs
+ BPFPlace
+
+BPb125 - stat.useItem.minecraft.emerald_ore
+ BPFPlace
+
+BPb126 - stat.useItem.minecraft.ender_chest
+ BPFPlace
+
+BPb127 - stat.useItem.minecraft.tripwire_hook
+ BPFPlace
+
+BPb128 - stat.useItem.minecraft.emerald_block
+ BPFPlace
+
+BPb129 - stat.useItem.minecraft.spruce_stairs
+ BPFPlace
+
+BPb130 - stat.useItem.minecraft.birch_stairs
+ BPFPlace
+
+BPb131 - stat.useItem.minecraft.jungle_stairs
+ BPFPlace
+
+BPb132 - stat.useItem.minecraft.command_block
+ BPFPlace
+
+BPb133 - stat.useItem.minecraft.beacon
+ BPFPlace
+
+BPb134 - stat.useItem.minecraft.cobblestone_wall
+ BPFPlace
+
+BPb135 - stat.useItem.minecraft.flower_pot
+ BPFPlace
+
+BPb136 - stat.useItem.minecraft.carrots
+ BPFPlace
+
+BPb137 - stat.useItem.minecraft.potatoes
+ BPFPlace
+
+BPb138 - stat.useItem.minecraft.wooden_button
+ BPFPlace
+
+BPb139 - stat.useItem.minecraft.skull
+ BPFPlace
+
+BPb140 - stat.useItem.minecraft.anvil
+ BPFPlace
+
+BPb141 - stat.useItem.minecraft.trapped_chest
+ BPFPlace
+
+BPb142 - stat.useItem.minecraft.light_weighted_pressure_plate
+ BPFPlace
+
+BPb143 - stat.useItem.minecraft.heavy_weighted_pressure_plate
+ BPFPlace
+
+BPb144 - stat.useItem.minecraft.unpowered_comparator
+ BPFPlace
+
+BPb145 - stat.useItem.minecraft.powered_comparator
+ BPFPlace
+
+BPb146 - stat.useItem.minecraft.daylight_detector
+ BPFPlace
+
+BPb147 - stat.useItem.minecraft.redstone_block
+ BPFPlace
+
+BPb148 - stat.useItem.minecraft.quartz_ore
+ BPFPlace
+
+BPb149 - stat.useItem.minecraft.hopper
+ BPFPlace
+
+BPb150 - stat.useItem.minecraft.quartz_block
+ BPFPlace
+
+BPb151 - stat.useItem.minecraft.quartz_stairs
+ BPFPlace
+
+BPb152 - stat.useItem.minecraft.activator_rail
+ BPFPlace
+
+BPb153 - stat.useItem.minecraft.dropper
+ BPFPlace
+
+BPb154 - stat.useItem.minecraft.stained_hardened_clay
+ BPFPlace
+
+BPb155 - stat.useItem.minecraft.stained_glass_pane
+ BPFPlace
+
+BPb156 - stat.useItem.minecraft.leaves2
+ BPFPlace
+
+BPb157 - stat.useItem.minecraft.log2
+ BPFPlace
+
+BPb158 - stat.useItem.minecraft.acacia_stairs
+ BPFPlace
+
+BPb159 - stat.useItem.minecraft.dark_oak_stairs
+ BPFPlace
+
+BPb160 - stat.useItem.minecraft.slime
+ BPFPlace
+
+BPb161 - stat.useItem.minecraft.barrier
+ BPFPlace
+
+BPb162 - stat.useItem.minecraft.iron_trapdoor
+ BPFPlace
+
+BPb163 - stat.useItem.minecraft.prismarine
+ BPFPlace
+
+BPb164 - stat.useItem.minecraft.sea_lantern
+ BPFPlace
+
+BPb165 - stat.useItem.minecraft.hay_block
+ BPFPlace
+
+BPb166 - stat.useItem.minecraft.carpet
+ BPFPlace
+
+BPb167 - stat.useItem.minecraft.hardened_clay
+ BPFPlace
+
+BPb168 - stat.useItem.minecraft.coal_block
+ BPFPlace
+
+BPb169 - stat.useItem.minecraft.packed_ice
+ BPFPlace
+
+BPb170 - stat.useItem.minecraft.double_plant
+ BPFPlace
+
+BPb171 - stat.useItem.minecraft.standing_banner
+ BPFPlace
+
+BPb172 - stat.useItem.minecraft.wall_banner
+ BPFPlace
+
+BPb173 - stat.useItem.minecraft.daylight_detector_inverted
+ BPFPlace
+
+BPb174 - stat.useItem.minecraft.red_sandstone
+ BPFPlace
+
+BPb175 - stat.useItem.minecraft.red_sandstone_stairs
+ BPFPlace
+
+BPb176 - stat.useItem.minecraft.stone_slab2
+ BPFPlace
+
+BPb177 - stat.useItem.minecraft.double_stone_slab2
+ BPFPlace
+
+BPb178 - stat.useItem.minecraft.spruce_fence_gate
+ BPFPlace
+
+BPb179 - stat.useItem.minecraft.birch_fence_gate
+ BPFPlace
+
+BPb180 - stat.useItem.minecraft.jungle_fence_gate
+ BPFPlace
+
+BPb181 - stat.useItem.minecraft.dark_oak_fence_gate
+ BPFPlace
+
+BPb182 - stat.useItem.minecraft.acacia_fence_gate
+ BPFPlace
+
+BPb183 - stat.useItem.minecraft.spruce_fence
+ BPFPlace
+
+BPb184 - stat.useItem.minecraft.birch_fence
+ BPFPlace
+
+BPb185 - stat.useItem.minecraft.jungle_fence
+ BPFPlace
+
+BPb186 - stat.useItem.minecraft.dark_oak_fence
+ BPFPlace
+
+BPb187 - stat.useItem.minecraft.acacia_fence
+ BPFPlace
+
+BPb188 - stat.useItem.minecraft.spruce_door
+ BPFPlace
+
+BPb189 - stat.useItem.minecraft.birch_door
+ BPFPlace
+
+BPb190 - stat.useItem.minecraft.jungle_door
+ BPFPlace
+
+BPb191 - stat.useItem.minecraft.acacia_door
+ BPFPlace
+
+BPb192 - stat.useItem.minecraft.dark_oak_door
+ BPFPlace
+
+BPb193 - stat.useItem.minecraft.end_rod
+ BPFPlace
+
+BPb194 - stat.useItem.minecraft.chorus_plant
+ BPFPlace
+
+BPb195 - stat.useItem.minecraft.chorus_flower
+ BPFPlace
+
+BPb196 - stat.useItem.minecraft.purpur_block
+ BPFPlace
+
+BPb197 - stat.useItem.minecraft.purpur_pillar
+ BPFPlace
+
+BPb198 - stat.useItem.minecraft.purpur_stairs
+ BPFPlace
+
+BPb199 - stat.useItem.minecraft.purpur_double_slab
+ BPFPlace
+
+BPb200 - stat.useItem.minecraft.purpur_slab
+ BPFPlace
+
+BPb201 - stat.useItem.minecraft.end_bricks
+ BPFPlace
+
+BPb202 - stat.useItem.minecraft.beetroots
+ BPFPlace
+
+BPb203 - stat.useItem.minecraft.grass_path
+ BPFPlace
+
+BPb204 - stat.useItem.minecraft.end_gateway
+ BPFPlace
+
+BPb205 - stat.useItem.minecraft.repeating_command_block
+ BPFPlace
+
+BPb206 - stat.useItem.minecraft.chain_command_block
+ BPFPlace
+
+BPb207 - stat.useItem.minecraft.frosted_ice
+ BPFPlace
+
+BPb208 - stat.useItem.minecraft.magma
+ BPFPlace
+
+BPb209 - stat.useItem.minecraft.nether_wart_block
+ BPFPlace
+
+BPb210 - stat.useItem.minecraft.red_nether_brick
+ BPFPlace
+
+BPb211 - stat.useItem.minecraft.bone_block
+ BPFPlace
+
+BPb212 - stat.useItem.minecraft.structure_void
+ BPFPlace
+
+BPb213 - stat.useItem.minecraft.observer
+ BPFPlace
+
+BPb214 - stat.useItem.minecraft.white_shulker_box
+ BPFPlace
+
+BPb215 - stat.useItem.minecraft.orange_shulker_box
+ BPFPlace
+
+BPb216 - stat.useItem.minecraft.magenta_shulker_box
+ BPFPlace
+
+BPb217 - stat.useItem.minecraft.light_blue_shulker_box
+ BPFPlace
+
+BPb218 - stat.useItem.minecraft.yellow_shulker_box
+ BPFPlace
+
+BPb219 - stat.useItem.minecraft.lime_shulker_box
+ BPFPlace
+
+BPb220 - stat.useItem.minecraft.pink_shulker_box
+ BPFPlace
+
+BPb221 - stat.useItem.minecraft.gray_shulker_box
+ BPFPlace
+
+BPb222 - stat.useItem.minecraft.silver_shulker_box
+ BPFPlace
+
+BPb223 - stat.useItem.minecraft.cyan_shulker_box
+ BPFPlace
+
+BPb224 - stat.useItem.minecraft.purple_shulker_box
+ BPFPlace
+
+BPb225 - stat.useItem.minecraft.blue_shulker_box
+ BPFPlace
+
+BPb226 - stat.useItem.minecraft.brown_shulker_box
+ BPFPlace
+
+BPb227 - stat.useItem.minecraft.green_shulker_box
+ BPFPlace
+
+BPb228 - stat.useItem.minecraft.red_shulker_box
+ BPFPlace
+
+BPb229 - stat.useItem.minecraft.black_shulker_box
+ BPFPlace
+
+BPb230 - stat.useItem.minecraft.white_glazed_terracotta
+ BPFPlace
+
+BPb231 - stat.useItem.minecraft.orange_glazed_terracotta
+ BPFPlace
+
+BPb232 - stat.useItem.minecraft.magenta_glazed_terracotta
+ BPFPlace
+
+BPb233 - stat.useItem.minecraft.light_blue_glazed_terracotta
+ BPFPlace
+
+BPb234 - stat.useItem.minecraft.yellow_glazed_terracotta
+ BPFPlace
+
+BPb235 - stat.useItem.minecraft.lime_glazed_terracotta
+ BPFPlace
+
+BPb236 - stat.useItem.minecraft.pink_glazed_terracotta
+ BPFPlace
+
+BPb237 - stat.useItem.minecraft.gray_glazed_terracotta
+ BPFPlace
+
+BPb238 - stat.useItem.minecraft.light_gray_glazed_terracotta
+ BPFPlace
+
+BPb239 - stat.useItem.minecraft.cyan_glazed_terracotta
+ BPFPlace
+
+BPb240 - stat.useItem.minecraft.purple_glazed_terracotta
+ BPFPlace
+
+BPb241 - stat.useItem.minecraft.blue_glazed_terracotta
+ BPFPlace
+
+BPb242 - stat.useItem.minecraft.brown_glazed_terracotta
+ BPFPlace
+
+BPb243 - stat.useItem.minecraft.green_glazed_terracotta
+ BPFPlace
+
+BPb244 - stat.useItem.minecraft.red_glazed_terracotta
+ BPFPlace
+
+BPb245 - stat.useItem.minecraft.black_glazed_terracotta
+ BPFPlace
+
+BPb246 - stat.useItem.minecraft.concrete
+ BPFPlace
 
  
  
