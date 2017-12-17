@@ -4,7 +4,7 @@ AI = auto increment
 FP = Objective, that helps to avoid false positives.
 L = Listener
 E = Event
-
+H = history score (data storage)
 
 reputation - dummy
 
@@ -37,7 +37,7 @@ ticksoffgrnd - dummy
 ticksongrnd - dummy
  how many ticks a player is on ground (gets reseted after arriving 8)
  
-airvl - dummy
+mAirvl - dummy
 
 [noprefix]displayFlags - trigger
  logger
@@ -46,19 +46,19 @@ dispFlagsSys - dummy
  logger
  
 AIjumpFP - stat.jump
- Air
+ mAir
  
 sprntValueFP - stat.sprintOneCm
- Air
+ mAir
  
 walkValueFP - stat.walkOneCm
- Air
+ mAir
  
 AIhitDealFP - stat.damageDealt
- Air
+ mAir
  
 AIhitTakeFP - stat.damageTaken
- Air
+ mAir
  
 
  
