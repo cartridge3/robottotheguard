@@ -3,5 +3,6 @@
 
 function robottotheguard:listeners/JoinListener
 function robottotheguard:listeners/LeaveListener
+function robottotheguard:listeners/BlockPlaceListener
 
  
