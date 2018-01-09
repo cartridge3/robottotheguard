@@ -9,12 +9,15 @@ execute @a[score_vnc_onground=0,m=0] ~ ~ ~ scoreboard players add @s vnc_ticksof
 execute @a[score_vnc_onground=0,m=2] ~ ~ ~ scoreboard players add @s vnc_ticksoffgrnd 1
 scoreboard players add @a[score_vnc_onground_min=1] vnc_ticksongrnd 1
 scoreboard players set @a[score_vnc_ticksoffgrnd_min=5,score_vnc_mAirvl_min=3,score_vnc_mAirvl=3] vnc_updateRep -10
-execute @a[score_vnc_ticksontick_min=46,score_vnc_onground=0] ~ ~ ~ scoreboard players set @a[score_vnc_ticksontick_min=46,score_vnc_onground=0] vnc_ticksoffgrnd 0
+execute @a[score_vnc_ticksontick_min=46,score_vnc_onground=0,score_vnc_ticksoffgrnd=0] ~ ~ ~ scoreboard players set @a[score_vnc_ticksontick_min=46,score_vnc_onground=0] vnc_ticksoffgrnd 0
 execute @a[score_vnc_onground_min=1] ~ ~ ~ scoreboard players set @a[score_vnc_onground_min=1] vnc_ticksoffgrnd 0
 
 function robottotheguard:logging/Flag
 
 
+scoreboard players set @e[score_vnc_mAirvl_min=1] vnc_setback 1
+
+function robottotheguard:util/Setback
 
 function robottotheguard:reputation/updateReputation
 

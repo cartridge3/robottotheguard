@@ -8,6 +8,11 @@ H = history score (data storage)
 b = block
 
 
+spawn - dummy
+ Setback
+
+setback - dummy
+ Setback
 
 reputation - dummy
 
